@@ -1,4 +1,29 @@
 {
-  "seen_urls": [],
-  "updated_at": ""
+  "seen_urls": [
+    "https://news.web.nhk/newsweb/na/nd-20261118de77484",
+    "https://news.yahoo.co.jp/pickup/6602987?source=rss",
+    "http://www.asahi.com/articles/ASVCK2T06VCKPOMB00KM.html?ref=rss",
+    "https://www.asahi.com/articles/ASVCJ46MZVCJULFA00SM.html?ref=rss",
+    "https://toyokeizai.net/articles/-/964555?utm_source=rss&utm_medium=http&utm_campaign=link_back",
+    "https://news.web.nhk/newsweb/na/nd-20261117de77426",
+    "https://news.yahoo.co.jp/pickup/6602985?source=rss",
+    "https://news.yahoo.co.jp/pickup/6602984?source=rss",
+    "https://www.afpbb.com/articles/-/3662884",
+    "https://gendai.media/articles/-/172985",
+    "https://gendai.media/articles/-/173071",
+    "https://news.web.nhk/newsweb/na/nd-20261118de77491",
+    "https://news.web.nhk/newsweb/na/nd-20261118de77480",
+    "http://www.asahi.com/articles/ASVCK0FSPVCKUQIP008M.html?ref=rss",
+    "https://news.web.nhk/newsweb/na/nd-20261117de77421",
+    "https://news.web.nhk/newsweb/na/nd-20261117de77106",
+    "https://news.yahoo.co.jp/pickup/6602962?source=rss",
+    "https://news.yahoo.co.jp/pickup/6602951?source=rss",
+    "https://www.asahi.com/articles/ASVCK3FHSVCKUCVL02WM.html?ref=rss",
+    "https://news.web.nhk/newsweb/na/nd-20261117de76883",
+    "https://www.cnn.co.jp/travel/35255024.html?ref=rss",
+    "https://www.asahi.com/articles/ASVCK2RJPVCKUTFL00SM.html?ref=rss",
+    "https://www.bbc.com/japanese/articles/crgqx1pe258go?at_medium=RSS&at_campaign=rss",
+    "https://www.asahi.com/articles/ASVCB1CHBVCBUTFL018M.html?ref=rss"
+  ],
+  "updated_at": "2026-11-18T08:30:20+09:00"
 }
