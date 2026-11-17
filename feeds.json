@@ -1,0 +1,156 @@
+{
+  "app_title": "毎朝の主要ニュースまとめ",
+  "app_subtitle": "テレビ局・新聞社公式RSSから偏りなく収集する毎朝5:30自動更新ニュースリーダー",
+  "lookback_hours": 72,
+  "max_articles": 24,
+  "top_picks_count": 10,
+  "gemini_model": "gemini-2.5-flash",
+  "categories": [
+    { "id": "general", "label": "主要・総合", "icon": "📰" },
+    { "id": "economy", "label": "経済・ビジネス", "icon": "💹" },
+    { "id": "tech_science", "label": "テック・科学", "icon": "🔬" },
+    { "id": "life_society", "label": "暮らし・社会", "icon": "🏠" }
+  ],
+  "feeds": [
+    {
+      "name": "NHKニュース (主要)",
+      "url": "https://www.nhk.or.jp/rss/news/cat0.xml",
+      "category": "general",
+      "lang": "ja",
+      "base_stars": 5
+    },
+    {
+      "name": "朝日新聞デジタル (総合)",
+      "url": "https://www.asahi.com/rss/asahi/newsheadlines.rdf",
+      "category": "general",
+      "lang": "ja",
+      "base_stars": 5
+    },
+    {
+      "name": "NHKニュース (政治)",
+      "url": "https://www.nhk.or.jp/rss/news/cat4.xml",
+      "category": "general",
+      "lang": "ja",
+      "base_stars": 5
+    },
+    {
+      "name": "新聞・テレビ各社 (主要トピックス)",
+      "url": "https://news.yahoo.co.jp/rss/topics/top-picks.xml",
+      "category": "general",
+      "lang": "ja",
+      "base_stars": 5
+    },
+    {
+      "name": "BBCニュース (日本語版)",
+      "url": "https://feeds.bbci.co.uk/japanese/rss.xml",
+      "category": "general",
+      "lang": "ja",
+      "base_stars": 4
+    },
+    {
+      "name": "NHKニュース (経済)",
+      "url": "https://www.nhk.or.jp/rss/news/cat5.xml",
+      "category": "economy",
+      "lang": "ja",
+      "base_stars": 5
+    },
+    {
+      "name": "現代ビジネス (経済・社会)",
+      "url": "https://gendai.media/list/feed/rss",
+      "category": "economy",
+      "lang": "ja",
+      "base_stars": 4
+    },
+    {
+      "name": "朝日新聞デジタル (経済)",
+      "url": "https://www.asahi.com/rss/asahi/business.rdf",
+      "category": "economy",
+      "lang": "ja",
+      "base_stars": 5
+    },
+    {
+      "name": "新聞・テレビ各社 (経済トピックス)",
+      "url": "https://news.yahoo.co.jp/rss/topics/business.xml",
+      "category": "economy",
+      "lang": "ja",
+      "base_stars": 4
+    },
+    {
+      "name": "東洋経済オンライン",
+      "url": "https://toyokeizai.net/list/feed/rss",
+      "category": "economy",
+      "lang": "ja",
+      "base_stars": 4
+    },
+    {
+      "name": "NHKニュース (科学・医療)",
+      "url": "https://www.nhk.or.jp/rss/news/cat3.xml",
+      "category": "tech_science",
+      "lang": "ja",
+      "base_stars": 5
+    },
+    {
+      "name": "朝日新聞デジタル (科学・環境)",
+      "url": "https://www.asahi.com/rss/asahi/science.rdf",
+      "category": "tech_science",
+      "lang": "ja",
+      "base_stars": 5
+    },
+    {
+      "name": "新聞・テレビ各社 (IT・テクノロジー)",
+      "url": "https://news.yahoo.co.jp/rss/topics/it.xml",
+      "category": "tech_science",
+      "lang": "ja",
+      "base_stars": 4
+    },
+    {
+      "name": "新聞・テレビ各社 (サイエンス)",
+      "url": "https://news.yahoo.co.jp/rss/topics/science.xml",
+      "category": "tech_science",
+      "lang": "ja",
+      "base_stars": 4
+    },
+    {
+      "name": "NHKニュース (社会・生活)",
+      "url": "https://www.nhk.or.jp/rss/news/cat1.xml",
+      "category": "life_society",
+      "lang": "ja",
+      "base_stars": 5
+    },
+    {
+      "name": "朝日新聞デジタル (社会・暮らし)",
+      "url": "https://www.asahi.com/rss/asahi/national.rdf",
+      "category": "life_society",
+      "lang": "ja",
+      "base_stars": 5
+    },
+    {
+      "name": "朝日新聞デジタル (生活・文化)",
+      "url": "https://www.asahi.com/rss/asahi/culture.rdf",
+      "category": "life_society",
+      "lang": "ja",
+      "base_stars": 4
+    },
+    {
+      "name": "新聞・テレビ各社 (国内・暮らし)",
+      "url": "https://news.yahoo.co.jp/rss/topics/domestic.xml",
+      "category": "life_society",
+      "lang": "ja",
+      "base_stars": 4
+    },
+    {
+      "name": "AFPBB News (国際通信社)",
+      "url": "http://feeds.afpbb.com/rss/afpbb/afpbbnews",
+      "category": "life_society",
+      "lang": "ja",
+      "base_stars": 4
+    },
+    {
+      "name": "CNN.co.jp (国際・社会)",
+      "url": "http://feeds.cnn.co.jp/rss/cnn/cnn.rdf",
+      "category": "life_society",
+      "lang": "ja",
+      "base_stars": 4
+    }
+  ]
+}
