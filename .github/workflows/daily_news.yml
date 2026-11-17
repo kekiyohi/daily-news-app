@@ -1,0 +1,43 @@
+name: Daily AI News Update
+
+on:
+  schedule:
+    # 毎朝 5:30 JST (UTC 20:30) に自動実行
+    - cron: '30 20 * * *'
+  workflow_dispatch: # GitHub画面から手動でも即時実行可能
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch RSS & Summarize with Gemini API
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_ACTIONS: 'true'
+        run: |
+          python3 generate_icons.py
+          python3 generate_news.py --record-seen
+
+      - name: Commit and push updated news page
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html articles_data.json seen_articles.json apple-touch-icon.png icon-192.png icon-512.png manifest.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: auto-update daily AI news ($(date +'%Y-%m-%d %H:%M JST'))"
+            git push
+          fi
+          
